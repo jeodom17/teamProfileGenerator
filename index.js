@@ -80,3 +80,29 @@ const managerQuestions = [
         name: 'internSchool',
       },
 ]
+
+
+//* writeToFile
+
+function writeToFile(fileName, data) {
+
+}
+
+//* Initialize - Manager questions
+
+function init() {
+
+}
+
+//* function for engineer questions
+
+function engineerQuestions() {
+
+}
+
+
+//* function for intern questions
+
+function internQuestions() {
+    
+}
