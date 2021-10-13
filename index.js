@@ -11,8 +11,9 @@ const rosterData = {
     engineerData: [],
 };
 
+//* Manager questions
 const managerQuestions = [
-    //* Manager questions
+    
   {
     type: 'input',
     message: 'What is the Managers name?',
@@ -85,14 +86,22 @@ const managerQuestions = [
 //* writeToFile
 
 function writeToFile(fileName, data) {
-
-}
+  fs.writeFile(fileName, data, (err) => {
+    err ? console.error(err) : console.log('Generating Employee Data....')
+  })
+};
 
 //* Initialize - Manager questions
 
 function init() {
-
+  inquirer
+    .prompt(managerQuestions)
+    .then(answers) => {
+      
+    }
 }
+
+init();
 
 //* function for engineer questions
 
