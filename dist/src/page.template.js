@@ -1,12 +1,14 @@
+//* functions to create cards
+
 function handleManagerCard(employeeData){
     return `
     <div id="emp-card">
       <div id="card-header">
         <h1 id="mgr-name">${employeeData.name}</h1>
-        <p id="mgr-role"></p>
+        <p id="mgr-role">Manager</p>
       </div>
       <div id="card-body">
-        <p id="mgr-id">ID: </p>
+        <p id="mgr-id">ID: ${employeeData.id}</p>
         <p>Email:<a href=" "></a></p>
         <p>Office number:</p>
     </div>
@@ -20,12 +22,12 @@ function handleManagerCard(employeeData){
     <div id="emp-card">
         <div id="card-header">
           <h1 id="eng-name">${employeeData.name}</h1>
-          <p id="eng-role"></p>
+          <p id="eng-role">Engineer</p>
         </div>
         <div id="card-body">
-          <p id="eng-id">ID: </p>
-          <p>Email:<a href=" "></a></p>
-          <p>Github:<a href=" "></a></p> 
+          <p id="eng-id">ID:${employeeData.id}</p>
+          <p>Email:${employeeData.email}<a href=" "></a></p>
+          <p>Github:${employeeData.github}<a href=" "></a></p> 
       </div>
     </div>
   `
@@ -36,12 +38,12 @@ function handleManagerCard(employeeData){
     <div id="emp-card">
         <div id="card-header">
           <h1 id="int-name">${employeeData.name}</h1>
-          <p id="int-role"></p>
+          <p id="int-role">Intern</p>
         </div>
         <div id="card-body">
-          <p id="int-id">ID: </p>
-          <p>Email:<a href=" "></a></p>
-          <p>School:</p>
+          <p id="int-id">ID:${employeeData.id} </p>
+          <p>Email:${employeeData.email}<a href=" "></a></p>
+          <p>School:${employeeData.school}</p>
         </div> 
     </div>  
   `
